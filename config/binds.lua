@@ -232,8 +232,8 @@ hl.bind("SUPER + Print", hl.dsp.exec_cmd(os.getenv("HOME") .. "/.config/hypr/scr
 
 -- WINDOW GROUPING BINDS --
 -- Объединить окно в группу вкладок / разгруппировать: Win + G
-hl.bind("SUPER + G", hl.dsp.togglegroup())
+hl.bind("SUPER + G", hl.dsp.group.toggle())
 
 -- Переключение между вкладками внутри группы: Win + Tab
-hl.bind("SUPER + Tab", hl.dsp.changegroupactive("f"))
+hl.bind("SUPER + Tab", hl.dsp.group.next())
 -- END WINDOW GROUPING BINDS --
