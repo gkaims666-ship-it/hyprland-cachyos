@@ -168,10 +168,11 @@ hl.layer_rule({
     ignore_alpha = 0.5,
 })
 
+
 -- Obsidian Glass Window Placement Rules --
 -- Режим «Картинка в картинке» (Picture-in-Picture)
 hl.window_rule({
-    match = { title = "^([Pp]icture[-\s]?[Ii]n[-\s]?[Pp]icture)$" },
+    match = { title = "^([Pp]icture[ -]?[Ii]n[ -]?[Pp]icture)$" },
     float = true,
     pin = true,
 })

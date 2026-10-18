@@ -12,7 +12,6 @@ hl.config({
         hover_icon_on_border = true,
         layout = "dwindle",
         col = {
-            -- Спектральный призматический градиент активного окна
             active_border = {
                 colors = { "rgba(00f5ffee)", "rgba(8a2be2ee)", "rgba(ff007fee)" },
                 angle = 45,
@@ -29,7 +28,6 @@ hl.config({
         dim_strength = 0.08,
         dim_special = 0.25,
 
-        -- Неоновый ореол (Bloom) вокруг активного окна
         shadow = {
             enabled = true,
             range = 22,
@@ -38,7 +36,6 @@ hl.config({
             color_inactive = "rgba(00000033)",
         },
 
-        -- Качественный Dual-Kawase blur
         blur = {
             enabled = true,
             size = 6,
@@ -52,14 +49,12 @@ hl.config({
         },
     },
 
-    -- Плавное и умное тайлинг-древо
     dwindle = {
         preserve_split = true,
         smart_resizing = true,
         special_scale_factor = 0.88,
     },
 
-    -- Стилизация вкладок (Grouped Windows)
     group = {
         col = {
             border_active = "rgba(00f5ffee)",
@@ -79,16 +74,5 @@ hl.config({
                 inactive = "rgba(1e1e2eaa)",
             },
         },
-    },
-
-    -- Анимация перетаскивания и ресайза окон
-    misc = {
-        animate_manual_resizes = true,
-        animate_mouse_windowdragging = true,
-        disable_hyprland_logo = true,
-        disable_splash_rendering = true,
-        mouse_move_enables_dpms = true,
-        focus_on_activate = true,
-        new_window_takes_over_fullscreen = 2,
     },
 })
