@@ -219,3 +219,12 @@ hl.bind("SUPER + W", hl.dsp.exec_cmd("firefox || zen-browser || chromium || xdg-
 -- Меню выбора обоев перенесено на Win + Shift + W
 hl.bind("SUPER + SHIFT + W", hl.dsp.exec_cmd(os.getenv("HOME") .. "/.config/hypr/scripts/wallpaper_picker.sh"))
 -- END BROWSER & WALLPAPER BINDS --
+
+-- SCREENSHOT SUITE --
+-- Скриншот области с редактором Swappy: Win + Shift + S
+hl.bind("SUPER + SHIFT + S", hl.dsp.exec_cmd(os.getenv("HOME") .. "/.config/hypr/scripts/screenshot.sh area"))
+
+-- Быстрый снимок всего экрана: PrintScreen и Win + PrintScreen
+hl.bind("", "Print", hl.dsp.exec_cmd(os.getenv("HOME") .. "/.config/hypr/scripts/screenshot.sh full"))
+hl.bind("SUPER", "Print", hl.dsp.exec_cmd(os.getenv("HOME") .. "/.config/hypr/scripts/screenshot.sh full"))
+-- END SCREENSHOT SUITE --
