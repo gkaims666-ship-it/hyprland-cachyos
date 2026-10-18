@@ -237,3 +237,11 @@ hl.bind("SUPER + G", hl.dsp.group.toggle())
 -- Переключение между вкладками внутри группы: Win + Tab
 hl.bind("SUPER + Tab", hl.dsp.group.next())
 -- END WINDOW GROUPING BINDS --
+
+-- SEARCH & POWER BINDS --
+-- Кнопка поиска: Win + S
+hl.bind("SUPER + S", hl.dsp.exec_cmd("rofi -show drun -config ~/.config/rofi/config.rasi"))
+
+-- Экран выключения (Glass Power Menu): Win + X
+hl.bind("SUPER + X", hl.dsp.exec_cmd("wlogout -b 5"))
+-- END SEARCH & POWER BINDS --

@@ -20,3 +20,12 @@ hl.window_rule({ match = { class = "^(mpv|vlc|steam_app.*|gamescope)$" }, opaque
 -- Окна выбора файлов и диалоги
 hl.window_rule({ match = { title = "^(Open File|Save File|Выбор файла|Сохранить файл|Open Folder)$" }, float = true, center = true })
 hl.window_rule({ match = { class = "^(pavucontrol|org.pulseaudio.pavucontrol)$" }, float = true, center = true })
+
+-- Wlogout Layer Blur --
+hl.layer_rule({
+    match = { namespace = "^(wlogout)$" },
+    blur = true,
+    blur_popups = true,
+    ignore_alpha = 0.1,
+})
+-- End Wlogout Layer Blur --
