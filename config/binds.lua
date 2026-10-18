@@ -248,5 +248,5 @@ hl.bind("SUPER + X", hl.dsp.exec_cmd("wlogout -b 5"))
 
 -- NOTIFICATION BIND --
 -- Открыть боковой стеклянный центр уведомлений: Win + N
-hl.bind("SUPER", "N", hl.dsp.exec_cmd("swaync-client -t -sw"))
+hl.bind("SUPER + N", hl.dsp.exec_cmd("swaync-client -t -sw"))
 -- END NOTIFICATION BIND --
