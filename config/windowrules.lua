@@ -167,3 +167,33 @@ hl.layer_rule({
     blur_popups = true,
     ignore_alpha = 0.5,
 })
+
+-- Obsidian Glass Window Placement Rules --
+-- Режим «Картинка в картинке» (Picture-in-Picture)
+hl.window_rule({
+    match = { title = "^([Pp]icture[-\s]?[Ii]n[-\s]?[Pp]icture)$" },
+    float = true,
+    pin = true,
+})
+
+-- Диалоги сохранения и открытия файлов (плавающие по центру)
+hl.window_rule({
+    match = { title = "^(Open File|Save File|Выбор файла|Сохранить файл|Open Folder)$" },
+    float = true,
+    center = true,
+})
+
+-- Системные запросы паролей Polkit (по центру экрана)
+hl.window_rule({
+    match = { class = "^(polkit-.*|org.kde.polkit-kde-authentication-agent-1)$" },
+    float = true,
+    center = true,
+})
+
+-- Микшер звука Pavucontrol
+hl.window_rule({
+    match = { class = "^(pavucontrol|org.pulseaudio.pavucontrol)$" },
+    float = true,
+    center = true,
+})
+-- End Obsidian Glass Window Placement Rules --

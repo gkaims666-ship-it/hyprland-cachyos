@@ -228,3 +228,11 @@ hl.bind("SUPER + SHIFT + S", hl.dsp.exec_cmd(os.getenv("HOME") .. "/.config/hypr
 hl.bind("Print", hl.dsp.exec_cmd(os.getenv("HOME") .. "/.config/hypr/scripts/screenshot.sh full"))
 hl.bind("SUPER + Print", hl.dsp.exec_cmd(os.getenv("HOME") .. "/.config/hypr/scripts/screenshot.sh full"))
 -- END SCREENSHOT SUITE --
+
+-- WINDOW GROUPING BINDS --
+-- Объединить окно в группу вкладок / разгруппировать: Win + G
+hl.bind("SUPER + G", hl.dsp.layout.toggle_group())
+
+-- Переключение между вкладками внутри группы: Win + Tab
+hl.bind("SUPER + Tab", hl.dsp.layout.change_group_active("f"))
+-- END WINDOW GROUPING BINDS --
