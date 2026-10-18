@@ -245,3 +245,8 @@ hl.bind("SUPER + S", hl.dsp.exec_cmd("rofi -show drun -config ~/.config/rofi/con
 -- Экран выключения (Glass Power Menu): Win + X
 hl.bind("SUPER + X", hl.dsp.exec_cmd("wlogout -b 5"))
 -- END SEARCH & POWER BINDS --
+
+-- NOTIFICATION BIND --
+-- Открыть боковой стеклянный центр уведомлений: Win + N
+hl.bind("SUPER", "N", hl.dsp.exec_cmd("swaync-client -t -sw"))
+-- END NOTIFICATION BIND --
