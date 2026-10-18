@@ -198,3 +198,12 @@ hl.window_rule({
     center = true,
 })
 -- End Obsidian Glass Window Placement Rules --
+
+-- Noctalia Layer Blur --
+hl.layer_rule({
+    match = { namespace = "^(noctalia-.+|bar|panel)$" },
+    blur = true,
+    blur_popups = true,
+    ignore_alpha = 0.4,
+})
+-- End Noctalia Layer Blur --
