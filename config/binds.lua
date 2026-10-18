@@ -211,7 +211,11 @@ hl.bind("SUPER + Y", hl.dsp.exec_cmd(os.getenv("HOME") .. "/.config/hypr/scripts
 -- END SHADER TOGGLE BIND --
 
 
--- WALLPAPER PICKER BIND --
--- Выбор обоев с плавной волной по Win + W
-hl.bind("SUPER + W", hl.dsp.exec_cmd(os.getenv("HOME") .. "/.config/hypr/scripts/wallpaper_picker.sh"))
--- END WALLPAPER PICKER BIND --
+
+-- BROWSER & WALLPAPER BINDS --
+-- Открытие браузера по привычному Win + W
+hl.bind("SUPER + W", hl.dsp.exec_cmd("firefox || zen-browser || chromium || xdg-open https://"))
+
+-- Меню выбора обоев перенесено на Win + Shift + W
+hl.bind("SUPER + SHIFT + W", hl.dsp.exec_cmd(os.getenv("HOME") .. "/.config/hypr/scripts/wallpaper_picker.sh"))
+-- END BROWSER & WALLPAPER BINDS --
