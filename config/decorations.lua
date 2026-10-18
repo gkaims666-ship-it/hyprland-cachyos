@@ -1,5 +1,5 @@
 -- ==============================================================
--- Unixporn Glassmorphism & Visual Aesthetics
+-- Obsidian Glass & Holographic Prism Aesthetics
 -- ==============================================================
 
 hl.config({
@@ -11,29 +11,32 @@ hl.config({
         resize_on_border = true,
         layout = "dwindle",
         col = {
+            -- Голографический спектр: Электрический Циан -> Фиолетовый -> Неоновый Розовый
             active_border = {
-                colors = { "rgba(cba6f7ee)", "rgba(89b4faee)", "rgba(f38ba8ee)" },
+                colors = { "rgba(00f5ffee)", "rgba(8a2be2ee)", "rgba(ff007fee)" },
                 angle = 45,
             },
-            inactive_border = "rgba(31324466)",
+            inactive_border = "rgba(18192666)",
         },
     },
 
     decoration = {
         rounding = 12,
         active_opacity = 1.0,
-        inactive_opacity = 0.94,
+        inactive_opacity = 0.92,
         dim_inactive = true,
-        dim_strength = 0.1,
+        dim_strength = 0.08,
 
+        -- Неоновое рассеянное свечение (Bloom) вокруг активного окна
         shadow = {
             enabled = true,
-            range = 25,
+            range = 22,
             render_power = 3,
-            color = "rgba(00000055)",
-            color_inactive = "rgba(00000025)",
+            color = "rgba(00f5ff26)",
+            color_inactive = "rgba(00000033)",
         },
 
+        -- Глубокий Dual-Kawase блюр
         blur = {
             enabled = true,
             size = 6,
