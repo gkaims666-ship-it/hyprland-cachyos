@@ -1,0 +1,26 @@
+# Cava Audio Visualizer - Holographic Prism Palette
+
+[general]
+framerate = 60
+bars = 0
+bar_width = 2
+bar_spacing = 1
+
+[input]
+method = pulse
+source = auto
+
+[output]
+method = ncurses
+style = stereo
+
+[color]
+gradient = 1
+gradient_count = 3
+gradient_color_1 = #00f5ff
+gradient_color_2 = #8a2be2
+gradient_color_3 = #ff007f
+
+[smoothing]
+monstercat = 1
+waves = 0

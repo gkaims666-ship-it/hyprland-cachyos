@@ -1,0 +1,38 @@
+# Starship Cyber Obsidian Theme
+format = """
+[░▒▓](#00f5ff)\
+[ 󰣇 ](bg:#00f5ff fg:#0a0b10)\
+[](fg:#00f5ff bg:#1e1e2e)\
+$directory\
+[](fg:#1e1e2e bg:#8a2be2)\
+$git_branch\
+$git_status\
+[](fg:#8a2be2 bg:#ff007f)\
+$cmd_duration\
+[](fg:#ff007f bg:transparent)\
+$character"""
+
+scan_timeout = 10
+
+[directory]
+style = "fg:#cdd6f4 bg:#1e1e2e"
+format = "[ $path ]($style)"
+truncation_length = 3
+truncation_symbol = "…/"
+
+[git_branch]
+style = "fg:#ffffff bg:#8a2be2"
+format = "[ 󰘬 $branch ]($style)"
+
+[git_status]
+style = "fg:#f38ba8 bg:#8a2be2"
+format = "[$all_status$ahead_behind ]($style)"
+
+[cmd_duration]
+style = "fg:#0a0b10 bg:#ff007f"
+format = "[  $duration ]($style)"
+min_time = 2000
+
+[character]
+success_symbol = "[ 󰄾](bold #00f5ff)"
+error_symbol = "[ 󰄾](bold #f38ba8)"
