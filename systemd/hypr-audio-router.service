@@ -1,0 +1,11 @@
+[Unit]
+Description=Hyprland Per-Monitor Audio Router
+After=graphical-session.target pipewire.service
+
+[Service]
+ExecStart=/usr/bin/python3 /home/abyss/.config/hypr/scripts/audio_router.py
+Restart=always
+RestartSec=3
+
+[Install]
+WantedBy=default.target
