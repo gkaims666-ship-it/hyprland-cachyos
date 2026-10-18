@@ -210,6 +210,7 @@ hl.bind("CTRL + mouse:272", hl.dsp.window.drag(), { mouse = true })
 hl.bind("SUPER + Y", hl.dsp.exec_cmd(os.getenv("HOME") .. "/.config/hypr/scripts/toggle_shader.sh"))
 -- END SHADER TOGGLE BIND --
 
+
 -- WALLPAPER PICKER BIND --
 -- Выбор обоев с плавной волной по Win + W
 hl.bind("SUPER + W", hl.dsp.exec_cmd(os.getenv("HOME") .. "/.config/hypr/scripts/wallpaper_picker.sh"))
