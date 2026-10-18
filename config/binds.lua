@@ -207,5 +207,5 @@ hl.bind("CTRL + mouse:272", hl.dsp.window.drag(), { mouse = true })
 
 -- SHADER TOGGLE BIND --
 -- Переключение легкого кинематографичного шейдера по Win + Y
-hl.bind("SUPER + Y", hl.exec_cmd(os.getenv("HOME") .. "/.config/hypr/scripts/toggle_shader.sh"))
+hl.bind("SUPER + Y", hl.dsp.exec_cmd(os.getenv("HOME") .. "/.config/hypr/scripts/toggle_shader.sh"))
 -- END SHADER TOGGLE BIND --
